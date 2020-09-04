@@ -1,0 +1,14 @@
+@import "~assets/styles/variables.scss";
+
+.container {
+  height: $footer-height;
+  width: 100%;
+  line-height: $footer-height;
+  background-color: white;
+  border-top: groove 0.5px $grey;
+  z-index: $z-footer;
+}
+
+.copyRight {
+  text-align: center;
+}

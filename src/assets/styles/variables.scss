@@ -1,0 +1,35 @@
+$header-height: 64px;
+$footer-height: 70px;
+
+// color
+$black: #121212;
+$grey: #f3f3f3;
+$dark-grey: #949494;
+
+// text styles
+$text-sizes: (
+  huge: 32px,
+  large: 24px,
+  normal: 18px,
+  small: 12px,
+);
+
+$text-weights: (
+  bold: 600,
+  regular: 400,
+);
+
+// z-index
+$z-header: 50;
+$z-footer: 50;
+$z-navbar: 100;
+
+@mixin text($size, $thickness) {
+  font-size: map-get($text-sizes, $size);
+  font-weight: map-get($text-weights, $thickness);
+}
+
+@mixin button() {
+  user-select: none;
+  cursor: pointer;
+}
